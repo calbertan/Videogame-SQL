@@ -1,13 +1,12 @@
 <?php
 include 'connect.php';
 $conn = OpenCon();
-myTable($conn,$sql);
 $sql = $_POST['query'];
 if ($conn->query($sql)) {
     echo "Query entered was: $sql";
-    echo "Table MyGuests created successfully";
+    echo "Table created successfully";
   } else {
-    echo "Table MyGuests created successfully";
+    echo "Query entered was: $sql";
     echo "Error creating table: " . $conn->error;
   }
   

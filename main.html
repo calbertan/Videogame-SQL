@@ -1,4 +1,5 @@
-<!----------CREATE QUERY----->
+
+<!----------CREATE QUERY---
 <form action="createFull.php" method="post">
     <label>Type in your create command (include quotation marks at
         beginning and end of string): 
@@ -10,7 +11,7 @@
 </form>
 
 
-<!----------INSERT QUERY----->
+----------INSERT QUERY-----
 <form action="insertFull.php" method="post">
     <label>Type in your insert command (include quotation marks at
         beginning and end of string):
@@ -22,7 +23,7 @@
 </form>
 
 
-<!----------UPDATE QUERY----->
+----------UPDATE QUERY-----
 <form action="updateFull.php" method="post">
     <label>Value of A</label>
     <input name="val-a" type="text" placeholder="Type
@@ -37,7 +38,7 @@
 </form>
 
 
-<!----------DELETE QUERY----->
+----------DELETE QUERY-----
 <form action="insertFull.php" method="post">
     <label>Value of A</label>
     <input name="val-a" type="text" placeholder="Type
@@ -50,7 +51,7 @@
          <br>
     <input type="submit" value="Show Sum">
 </form>
-<!----------SEARCH QUERY----->
+--------SEARCH QUERY-----
 <form action="queryFull.php" method="post">
     <label>Value of A</label>
     <input name="val-a" type="text" placeholder="Type
@@ -62,4 +63,33 @@
 <br>
          <br>
     <input type="submit" value="Show Sum">
+</form>
+-->
+<h1>Pick which query to perform</h1>
+<form action="redirects.php" method="post">
+    <input type="submit" name="insert" value="I want to Insert">
+</form>
+<form action="redirects.php" method="post">
+    <input type="submit" name="delete" value="I want to Delete">
+</form>
+<form action="redirects.php" method="post">
+    <input type="submit" name="update" value="I want to Update">
+</form>
+<form action="redirects.php" method="post">
+    <input type="submit" name="select" value="I want to Select">
+</form>
+<form action="redirects.php" method="post">
+    <input type="submit" name="project" value="I want to Project">
+</form>
+<form action="redirects.php" method="post">
+    <input type="submit" name="join" value="I want to Join">
+</form>
+<form action="redirects.php" method="post">
+    <input type="submit" name="aggregate" value="I want to Aggregate">
+</form>
+<form action="redirects.php" method="post">
+    <input type="submit" name="nested" value="I want to Nested Aggregate">
+</form>
+<form action="redirects.php" method="post">
+    <input type="submit" name="division" value="I want to Divide">
 </form>

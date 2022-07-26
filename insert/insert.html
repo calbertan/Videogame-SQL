@@ -1,0 +1,81 @@
+<h1>This Page inserts entries to either Platform, Ip, or Consumer</h1>
+
+<h3>Inserting into Platform</h3>
+<form action="insertFull.php" method="post">
+  </br>Columns in Platform table are :
+  </br>
+  Name of platform
+  </br>
+  Year it was discontinued (leave empty if not yet discontinued)
+  </br>
+  Name of company that manufactured it
+  </br>
+  <h4>
+    Note: Both the name of the platform and the name of the company cannot be empty
+  </h4>
+  </br>
+  <label>Enter Name of platform</label>
+  <input name="name" type="text" placeholder="Type
+  Here">
+  <br>
+  <label>Enter year discontinued (or leave empty)</label>
+  <input name="year" type="text" placeholder="Type
+  Here">
+  <br>
+  <label>Enter Name of company</label>
+  <input name="company" type="text" placeholder="Type
+  Here">
+  <br>
+  <br>
+  <input type="submit" value="Execute" name="platform">
+</form>
+
+<hr size="10">
+<h3>Inserting into Ip</h3>
+<form action="insertFull.php" method="post">
+  </br>Columns in Ip table are :
+  </br>
+    Intellectual Property Name
+  </br>
+  <h4>
+    Note: IP Name cannot be empty
+  </h4>
+  </br>
+  <label>Enter Name of the intellectual property</label>
+  <input name="name" type="text" placeholder="Type
+    Here">
+  <br>
+  <br>
+  <input type="submit" value="Execute" name="ip">
+</form>
+
+<hr size="10">
+<h3>Inserting into Consumer</h3>
+<form action="insertFull.php" method="post">
+  </br>Columns in Consumer table are :
+  </br>
+    Name of person
+  </br>
+    Their consumer ID
+  </br>
+    Their age
+  </br>
+  <h4>
+    Note: Consumer ID cannot be empty
+  </h4>
+  </br>
+  <label>Enter Name of consumer</label>
+  <input name="name" type="text" placeholder="Type
+  Here">
+  <br>
+  <label>Enter consumer ID</label>
+  <input name="id" type="text" placeholder="Type
+  Here">
+  <br>
+  <label>Enter consumer age</label>
+  <input name="age" type="text" placeholder="Type
+  Here">
+  <br>
+  <br>
+  <input type="submit" value="Execute" name="consumer">
+</form>

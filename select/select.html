@@ -1,1 +1,26 @@
-<h1>Selecting</h1>
+<h1>This page returns tables following conditional comparison</h1>
+
+<form action="selectFull.php" method="post">
+</br>
+<label>Enter name of table</label>
+<input name="name" type="text" placeholder="Type Here">
+<br>
+<label>Enter field name for condition</label>
+<input name="field" type="text" placeholder="Type Here">
+<br>
+<label>Comparison</label>
+<select name="condition">
+  <option value="greater">Greater than</option>
+  <option value="less">Less than</option>
+  <option value="equal">Equal to</option>
+</select>
+<br>
+<label>Input condition value </label>
+<input name="value" type="text" placeholder="Type
+Here">
+<br>
+<br>
+<input type="submit" value="Execute">
+</form>
+
+<h4>Note: table name, field name, and condition value all cannot be empty</h4>

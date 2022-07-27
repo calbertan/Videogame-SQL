@@ -1,1 +1,50 @@
-<h1>Joining</h1>
+<h1>This page performs join queries</h1>
+
+
+<form action="joinFull.php" method="post">
+</br>
+<label>Enter entry table name where data is known </label>
+<input name="nameIn" type="text" placeholder="Type Here">
+<br>
+<br>
+<label>Enter outputting table name where data is desired </label>
+<input name="nameAns" type="text" placeholder="Type Here">
+<br>
+<br>
+<label>Enter name of field in entry table to be joined</label>
+<input name="fieldIn" type="text" placeholder="Type Here">
+<br>
+<br>
+<label>Enter name of field in outputting table to be joined</label>
+<input name="fieldInOther" type="text" placeholder="Type Here">
+<br>
+<br>
+<label>
+  Enter desired field(s) resulting from join, comma separated
+  if multiple fields
+</label>
+<input name="fieldAns" type="text" placeholder="Type Here">
+<br>
+<br>
+<br>
+<br>
+<label>Enter any constraint field on entry field</label>
+<input name="constraintField" type="text" placeholder="Type Here">
+<br>
+<br>
+<label>Enter any constraint value</label>
+<input name="constraintValue" type="text" placeholder="Type Here">
+<br>
+<br>
+<label>Comparison</label>
+<select name="condition">
+  <option value="greater">Greater than</option>
+  <option value="less">Less than</option>
+  <option value="equal">Equal to</option>
+</select>
+<input type="submit" value="Execute">
+</form>
+
+<h4>
+  Note: only constraint value textbox may be empty if there are no constraints
+</h4>

@@ -1,1 +1,30 @@
-<h1>Aggregating</h1>
+<h1>This page performs aggregation queries</h1>
+
+
+<form action="aggregateFull.php" method="post">
+</br>
+<label>Enter table name</label>
+<input name="name" type="text" placeholder="Type Here">
+<br>
+<br>
+<label>Enter name of field to be aggregated</label>
+<input name="field" type="text" placeholder="Type Here">
+<br>
+<br>
+<label>Type of aggregation</label>
+<select name="method">
+  <option value="count">count</option>
+  <option value="average">average</option>
+  <option value="sum">sum</option>
+  <option value="min">min</option>
+  <option value="max">max</option>
+</select>
+<br>
+<br>
+<input type="submit" value="Execute">
+</form>
+
+<h4>
+  Note: table name and field name cannot be empty. Aggregation will 
+  fail if query does not make logical sense.
+</h4>

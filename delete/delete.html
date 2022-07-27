@@ -1,1 +1,61 @@
-<h1>Deleting</h1>
+<h1>This Page Deletes entries to either Platform, Ip, or Consumer</h1>
+
+<h3>Delete an entry for IP</h3>
+<form action="delete.php" method="post">
+  Columns in Ip table are :
+  </br>
+    Intellectual Property Name
+  </br>
+  <h4>
+    Note: Deleting IP affects licensed_by
+  </h4>
+
+  </br>Enter ip name :
+  <input name="name" type="text" placeholder="Type
+    Here">
+  <br>
+  <br>
+  <input type="submit" value="Execute" name="ip">
+</form>
+
+<hr size="10">
+<h3>Delete a Video Game Reviewer</h3>
+<form action="delete.php" method="post">
+  Columns in Video Game Reviewer table are :
+  </br>
+    Reviewer ID
+  </br>
+  <h4>
+    Note: Deleting Reviewer id affects General Audience, Game Critic, Influences
+  </h4>
+  </br>
+  <label>Enter id of reviewer</label>
+  <input name="r_id" type="text" placeholder="Type
+  Here">
+  <br>
+  <br>
+  <input type="submit" value="Execute" name="reviewer">
+</form>
+
+<hr size="10">
+<h3>Delete a Consumer entry</h3>
+<form action="delete.php" method="post">
+  Columns in Consumer table are :
+  </br>
+    Consumer name
+  </br>
+    Consumer id
+  </br>
+    Consumer age
+  </br>
+  <h4>
+    Note: Deleting Reviewer id affects Plays, Influences, Plays_on
+  </h4>
+  </br>
+  <label>Enter id of consumer</label>
+  <input name="c_id" type="text" placeholder="Type
+  Here">
+  <br>
+  <br>
+  <input type="submit" value="Execute" name="consumer">
+</form>

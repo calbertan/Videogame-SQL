@@ -1,1 +1,21 @@
-<h1>Projecting</h1>
+<h1>This page displays projections of specified table</h1>
+
+<form action="projectFull.php" method="post">
+  </br>
+  <label>Enter table name</label>
+  <input name="name" type="text" placeholder="Type Here">
+  <br>
+  <br>
+  <label>Enter list of desired fields, comma separated</label>
+  <input name="fields" type="text" placeholder="Type Here">
+  <br>
+  <label>Fields example: name, date, eye color</label>
+  <br>
+  <input type="submit" value="Execute">
+</form>
+
+<h4>
+  Note: leaving fields textbox empty will return full table. 
+  Table name textbox cannot be empty
+</h4>
+  

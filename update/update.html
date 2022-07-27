@@ -1,1 +1,26 @@
-<h1>Updating</h1>
+<h1>This page updates the existing data in the Platform table</h1>
+
+<form action="updateFull.php" method="post">
+  </br>Columns in Platform tables are :
+  </br>
+  Name of game platform
+  </br>
+  Year of discontinuation (empty or NULL if not yet discontinued)
+  </br>
+  Name of company that manufactured it
+  </br>
+  </br>
+  <label>Enter the name of the platform entry to be updated</label>
+  <input name="name" type="text" placeholder="Type
+  Here">
+  <br>
+  <label>Update the year of discontinuation</label>
+  <input name="year" type="text" placeholder="Type
+  Here">
+  <br>
+  <br>
+  <input type="submit" value="Execute">
+</form>
+
+<h4>Note: leave the year field blank if platform is no longer discontinued</h4>
+  

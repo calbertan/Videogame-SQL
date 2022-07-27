@@ -61,7 +61,7 @@
     $sql = "SELECT $fieldAns
       FROM $nameIn, $nameAns
       WHERE $nameIn.$fieldIn=$nameAns.$fieldInOther
-      AND $constraintField = '$constraintValue'";
+      AND $constraintField = $constraintValue";
   }
 
   myTable($conn, $sql);

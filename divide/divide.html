@@ -2,7 +2,14 @@
 
 <form action="division.php" method="post">
 </br>
-<label>This query shows all games available on NON DISCONTINUED platforms</label>
+<label>This query shows all games available on platforms that are discontinued or available</label>
+<br>
+<br>
+<label>Discontinued/available</label>
+<select name="condition">
+  <option value="discontinued">Discontinued</option>
+  <option value="available">Available</option>
+</select>
 <br>
 <br>
 <input type="submit" value="Execute">

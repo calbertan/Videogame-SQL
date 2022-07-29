@@ -32,12 +32,22 @@
 
   include '../connect.php';
   $conn = OpenCon();
+  $condition = $_POST['condition'];
   
-  $sql = "SELECT * FROM available_on WHERE NOT EXISTS
-  (SELECT name FROM platform WHERE discontinued IS NOT NULL AND available_on.platform_name = platform.name)";
+  if($condition == "discontinued"){
+    $sql = "SELECT * FROM available_on WHERE NOT EXISTS
+    (SELECT name FROM platform WHERE discontinued IS NULL AND available_on.platform_name = platform.name)";
+  }else{
+    $sql = "SELECT * FROM available_on WHERE NOT EXISTS
+    (SELECT name FROM platform WHERE discontinued IS NOT NULL AND available_on.platform_name = platform.name)";
+  }
 
   if ($conn->query($sql)) {
-    echo "Displaying all videogames on NON DISCONTINUED platforms" . "<br>";
+    if($condition == "discontinued"){
+      echo "Displaying all videogames on DISCONTINUED platforms" . "<br>";
+    }else{
+      echo "Displaying all videogames on AVAILABLE platforms" . "<br>";
+    }
   } else {
     echo "Error deleting entry: " . $conn->error;
   }

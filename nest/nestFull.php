@@ -38,18 +38,23 @@
   $field = $_POST['field'];
   $method = $_POST['method'];
   $group = $_POST['group'];
+  $max = $_POST['max'];
 
 
   if ($method == "count") {
-    $sql = "SELECT $group, COUNT($field) FROM $name GROUP BY $group";
+    $sql = "SELECT temp.$group, temp.count 
+    FROM
+    (SELECT $group, COUNT($field) as count FROM $name GROUP BY $group) AS temp
+    WHERE temp.count <= $max";
   } else if ($method == "average") {
-    $sql = "SELECT $group, AVG($field) FROM $name GROUP BY $group";
+    $sql = "SELECT temp.$group, temp.avg
+    FROM
+    (SELECT $group, AVG($field) as avg FROM $name GROUP BY $group) AS temp
+    WHERE temp.avg <= $max";
   } else if ($method == "sum") {
-    $sql = "SELECT $group, SUM($field) FROM $name GROUP BY $group";
-  } else if ($method == "min") {
-    $sql = "SELECT $group, MIN($field) FROM $name GROUP BY $group";
-  } else { // method == max
-    $sql = "SELECT $group, MAX($field) FROM $name GROUP BY $group";
+    $sql = "SELECT temp.$group, temp.sum
+    (SELECT $group, SUM($field) as sum FROM $name GROUP BY $group) AS temp
+    WHERE temp.sum <=  $max";
   }
 
   myTable($conn, $sql);

@@ -1,1 +1,33 @@
 <h1>Nested Aggregation</h1>
+
+
+
+<form action="nestFull.php" method="post">
+</br>
+<label>Enter table name</label>
+<input name="name" type="text" placeholder="Type Here">
+<br>
+<br>
+<label>Enter name of field to be grouped by</label>
+<input name="group" type="text" placeholder="Type Here">
+<br>
+<br>
+<label>Type of aggregation</label>
+<select name="method">
+  <option value="count">count</option>
+  <option value="average">average</option>
+  <option value="sum">sum</option>
+  <option value="min">min</option>
+  <option value="max">max</option>
+</select>
+<br>
+<label>Enter name of field to be aggregated</label>
+<input name="field" type="text" placeholder="Type Here">
+<br>
+<br>
+<input type="submit" value="Execute">
+</form>
+
+<h4>
+  Note: all textboxes cannot be empty
+</h4>

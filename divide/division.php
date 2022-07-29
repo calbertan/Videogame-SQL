@@ -10,7 +10,7 @@
       while ($i < mysqli_num_fields($rsResult)) {
         $field = mysqli_fetch_field_direct($rsResult, $i);
         $fieldName=$field->name;
-        echo "<td><strong>Console</strong></td>";
+        echo "<td><strong>$fieldName</strong></td>";
         $i = $i + 1;
       }
       echo "</tr>";

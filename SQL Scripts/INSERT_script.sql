@@ -27,24 +27,24 @@ INSERT INTO VG_Company VALUES('bethesda game studio','united states');
 INSERT INTO VG_Company VALUES('kojima productions','japan');
 INSERT INTO VG_Company VALUES('valve','united states');
 
-INSERT INTO Company_Publisher_Videogame VALUES('minecraft','2011-11-18',10,'mojang','mojang');
-INSERT INTO Company_Publisher_Videogame VALUES('halo: reach','2010-09-14',17,'xbox game studios','bungie');
-INSERT INTO Company_Publisher_Videogame VALUES('terraria','2011-05-11',12,'relogic','relogic');
-INSERT INTO Company_Publisher_Videogame VALUES('overcooked 2','2018-08-07',3,'team17','team17');
-INSERT INTO Company_Publisher_Videogame VALUES('fortnite','2017-07-21',13,'epic games','epic games');
-INSERT INTO Company_Publisher_Videogame VALUES('league of legends: wild rift','2020-10-27',12,'riot games','riot games');
-INSERT INTO Company_Publisher_Videogame VALUES('it takes two','2021-03-26',12,'electronic arts','hazelight studios');
-INSERT INTO Company_Publisher_Videogame VALUES('ghost of tsushima','2020-07-17',16,'sony','sucker punch productions');
-INSERT INTO Company_Publisher_Videogame VALUES('mortal kombat 11','2019-04-23',18,'warner bros','netherrealm studios');
-INSERT INTO Company_Publisher_Videogame VALUES('celeste','2018-01-25',7,'matt makes games','matt makes games');
-INSERT INTO Company_Publisher_Videogame VALUES('resident evil village','2021-05-07',18,'capcom','capcom');
-INSERT INTO Company_Publisher_Videogame VALUES('starfield','2023-12-31',18,'bethesda softworks','bethesda game studio');
-INSERT INTO Company_Publisher_Videogame VALUES('death stranding','2019-11-08',18,'sony','kojima productions');
-INSERT INTO Company_Publisher_Videogame VALUES('dota 2','2013-07-09',7,'valve','valve');
-INSERT INTO Company_Publisher_Videogame VALUES('team fortress classic','1999-04-07',17,'valve','valve');
-INSERT INTO Company_Publisher_Videogame VALUES('team fortress 2','2007-10-10',15,'valve','valve');
-INSERT INTO Company_Publisher_Videogame VALUES('portal','2007-10-10',10,'valve','valve');
-INSERT INTO Company_Publisher_Videogame VALUES('portal 2','2011-04-18',10,'valve','valve');
+INSERT INTO Company_Publisher_Videogame VALUES('minecraft',2011-11-18,10,'mojang','mojang');
+INSERT INTO Company_Publisher_Videogame VALUES('halo: reach',2010-09-14,17,'xbox game studios','bungie');
+INSERT INTO Company_Publisher_Videogame VALUES('terraria',2011-05-11,12,'relogic','relogic');
+INSERT INTO Company_Publisher_Videogame VALUES('overcooked 2',2018-08-07,3,'team17','team17');
+INSERT INTO Company_Publisher_Videogame VALUES('fortnite',2017-07-21,13,'epic games','epic games');
+INSERT INTO Company_Publisher_Videogame VALUES('league of legends: wild rift',2020-10-27,12,'riot games','riot games');
+INSERT INTO Company_Publisher_Videogame VALUES('it takes two',2021-03-26,12,'electronic arts','hazelight studios');
+INSERT INTO Company_Publisher_Videogame VALUES('ghost of tsushima',2020-07-17,16,'sony','sucker punch productions');
+INSERT INTO Company_Publisher_Videogame VALUES('mortal kombat 11',2019-04-23,18,'warner bros','netherrealm studios');
+INSERT INTO Company_Publisher_Videogame VALUES('celeste',2018-01-25,7,'matt makes games','matt makes games');
+INSERT INTO Company_Publisher_Videogame VALUES('resident evil village',2021-05-07,18,'capcom','capcom');
+INSERT INTO Company_Publisher_Videogame VALUES('starfield',2023-12-31,18,'bethesda softworks','bethesda game studio');
+INSERT INTO Company_Publisher_Videogame VALUES('death stranding',2019-11-08,18,'sony','kojima productions');
+INSERT INTO Company_Publisher_Videogame VALUES('dota 2',2013-07-09,7,'valve','valve');
+INSERT INTO Company_Publisher_Videogame VALUES('team fortress classic',1999-04-07,17,'valve','valve');
+INSERT INTO Company_Publisher_Videogame VALUES('team fortress 2',2007-10-10,15,'valve','valve');
+INSERT INTO Company_Publisher_Videogame VALUES('portal',2007-10-10,10,'valve','valve');
+INSERT INTO Company_Publisher_Videogame VALUES('portal 2',2011-04-18,10,'valve','valve');
 
 INSERT INTO Genre VALUES('sandbox');
 INSERT INTO Genre VALUES('adventure');
@@ -113,18 +113,25 @@ INSERT INTO Consumer VALUES('Alfred Pennyworth', 76543, 78);
 
 INSERT INTO Plays VALUES(88888,732,'minecraft','mojang','mojang');
 INSERT INTO Plays VALUES(21212,12,'halo: reach','xbox game studios','bungie');
+INSERT INTO Plays VALUES(54321,12,'halo: reach','xbox game studios','bungie');
 INSERT INTO Plays VALUES(54321,3,'terraria','relogic','relogic');
+INSERT INTO Plays VALUES(54321,732,'minecraft','mojang','mojang');
+INSERT INTO Plays VALUES(54321,12,'ghost of tsushima','sony','sucker punch productions');
+INSERT INTO Plays VALUES(54321,200,'overcooked 2','team17','team17');
+INSERT INTO Plays VALUES(54321,6589,'fortnite','epic games','epic games');
 INSERT INTO Plays VALUES(65432,200,'overcooked 2','team17','team17');
 INSERT INTO Plays VALUES(76543,6589,'fortnite','epic games','epic games');
 
-INSERT INTO Platform VALUES('playstation 3',2017,'sony');
 INSERT INTO Platform VALUES('xbox 360',2016,'microsoft');
 INSERT INTO Platform VALUES('pc',NULL,'microsoft');
 INSERT INTO Platform VALUES('playstation5',NULL,'sony');
 INSERT INTO Platform VALUES('switch',NULL,'nintendo');
 
 INSERT INTO Available_On VALUES('pc','minecraft','mojang','mojang');
+INSERT INTO Available_On VALUES('xbox 360','minecraft','mojang','mojang');
+INSERT INTO Available_On VALUES('switch','minecraft','mojang','mojang');
 INSERT INTO Available_On VALUES('xbox 360','halo: reach','xbox game studios','bungie');
+INSERT INTO Available_On VALUES('playstation5','ghost of tsushima','sony','sucker punch productions');
 INSERT INTO Available_On VALUES('pc','terraria','relogic','relogic');
 INSERT INTO Available_On VALUES('pc','overcooked 2','team17','team17');
 INSERT INTO Available_On VALUES('switch','fortnite','epic games','epic games');
@@ -161,8 +168,6 @@ INSERT INTO Nominations VALUES(2018,'best independent game','celeste','matt make
 INSERT INTO Won_At VALUES(2021,'game of the year','it takes two','electronic arts','hazelight studios');
 INSERT INTO Won_At VALUES(2020,"player's choice",'ghost of tsushima','sony','sucker punch productions');
 INSERT INTO Won_At VALUES(2018,'best independent game','celeste','matt makes games','matt makes games');
-INSERT INTO Won_At VALUES(2019,'best independent game','celeste','matt makes games','matt makes games');
-INSERT INTO Won_At VALUES(2020,'best independent game','celeste','matt makes games','matt makes games');
 
 INSERT INTO Game_Code_1 VALUES('open world','sandbox');
 INSERT INTO Game_Code_1 VALUES('arena','moba');
